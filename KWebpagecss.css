@@ -1,0 +1,147 @@
+﻿
+
+/* Center the content both horizontally and vertically on the webpage */
+header {
+    display: flex; /* Use flexbox layout for the header */
+    justify-content: center; /* Center its children horizontally */
+    align-items: center; /* Center its children vertically */
+    background: rgb(21, 8, 29); /* Set the background color below the navbar */
+    min-height: 25vh; /* Ensure the header takes up at least 15% of the viewport height */
+    margin: 0; /* Remove default margin to avoid unwanted spacing */
+}
+
+
+/* Set the spacing and alignment for the navbar */
+.nav.nav-tabs {
+    display: flex; /* Use flexbox layout for the navbar */
+    justify-content: flex-start; /* Align the navbar items to the left */
+    padding-top: 20px; /* Add spacing to the top of the navbar */
+    gap: 20px; /* Add spacing between the navbar items */
+    background: rgb(32, 13, 44); /* Change the background color of the navbar */
+    width: 100%; /* Stretch the width of the navbar to the whole page */
+}
+
+/* Style for the navbar links */
+.nav-item {
+    margin-right: 10px; /* Add some spacing between each navbar item */
+}
+
+.nav-item .nav-link {
+    color: #fff !important; /* Set the text color to white for the active link */
+    border-bottom: none !important;
+    font-weight: bold;
+}
+
+/* Style for the active link in the navbar */
+    .nav-item .nav-link.active {
+        background-color: rgb(191 146 223) !important; /* Change the background color for the active link */
+        color: white !important; /* Set the text color to white for the active link */
+        font-weight: bold;
+    }
+
+body {
+    background-color: rgb(191 146 223) !important;
+    min-height: 100%;
+}
+
+.headText {
+    color: white;
+    font-family: 'Franklin Gothic Book';
+    font-weight: bold;
+    font-size: 50px;
+    background: rgb(32, 13, 44);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+/* Set general styles for the footer */
+footer {
+    position: relative;
+    bottom: 0;
+    height: 57px;
+    width: 100%;
+    background-color: rgb(32, 13, 44);
+    color: black;
+    margin-top 40px;   
+}
+
+
+
+
+.pagetext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    max-width: 100%; /* Limit the maximum width of the .pagetext container */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.pagetext-container {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    background: rgb(171 103 219);
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* New styles for .row and .col */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 100px !important;
+    max-width: 100%; /* Limit the maximum width of the .row container */
+    overflow-x: hidden; /* Hide horizontal overflow */
+
+}
+
+.col-4 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.col-8 {
+    /* Add any specific styles for the second column if needed */
+    flex-basis: 75%;
+    max-width: 75%;
+    color: white;
+}
+
+.row .col-4 a {
+    color: black;
+}
+
+.row .col-4 a:hover {
+    color: white;
+    background: rgb(64, 27, 86);
+}
+
+.row .nav-link.active {
+    background-color: rgb(32, 13, 44) !important;
+    color: white !important; /* Set the text color to red for the active link */
+    font-weight: bold;
+}
+
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Display images vertically */
+    align-items: center; /* Center images horizontally */
+    margin-top: 20px; /* Adjust this value to control the space above the images */
+}
+
+.image {
+    max-width: 100%; /* Make all images the same width within the container */
+    border: 2px solid black; /* Add borders to the images */
+    border-radius: 10px; /* Add rounded corners to the images */
+    margin: 10px 0; /* Add vertical space between each image */
+}
